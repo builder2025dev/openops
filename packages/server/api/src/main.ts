@@ -83,7 +83,8 @@ const main = async (): Promise<void> => {
   if (system.isApp()) {
     await validateEnvPropsOnStartup();
 
-    await databaseConnection().initialize();
+   let dbConnection =  await databaseConnection().initialize();
+    console.log('DbConnection....',dbConnection)
     await databaseConnection().runMigrations();
 
     await upsertAdminUser();

@@ -1,7 +1,0 @@
-{
-  "name": "@openops/block-linear",
-  "version": "0.1.8",
-  "dependencies": {
-    "@linear/sdk": "7.0.1"
-  }
-}
